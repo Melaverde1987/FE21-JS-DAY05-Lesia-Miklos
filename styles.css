@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -14,11 +14,73 @@ a {
     max-width: 90%;
 }
 
-.second {
-    color: blue;
+header {
+    background-color: rgb(5, 118, 146);
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 4rem;
 }
 
-    .second::after {
-        content: ' web developer';
-        color: chartreuse;
+    header .hotelname {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 700;
     }
+
+    header .subtitle {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.4rem;
+    }
+
+main {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+    main .left {
+        float: left;
+        width: 60%;
+    }
+
+    main .right {
+        float: left;
+        width: 40%;
+    }
+
+    main .left .text {
+        margin: 2rem 0;
+        color: rgb(5, 118, 146);
+    }
+
+    main .right .text {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    main .right .subtext {
+        margin: 0;
+    }
+
+    main .box {
+        margin-bottom: 2rem;
+    }
+
+        main .box label {
+            float: left;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        main .box input {
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        main .box input[type=text] {
+            transition: width 0.4s ease-in-out;
+        }
+
+        main .box input[type=text]:focus {
+            width: 35%;
+            border-color: blue !important;
+        }
