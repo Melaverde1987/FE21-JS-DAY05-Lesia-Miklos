@@ -19,12 +19,13 @@ class Car extends Object {
         this.color = color;
         
         
-    }
-
+    }//Added new parametars and called them with .this
+//printed them out 
     showMessage() {
         return '<br>' + super.showMessage() + ', the brand is ' + this.brand + ', the model is ' + this.model + ', the type is ' + this.color + ', the color is ' + this.type ;
     }
 }
+//Bike object
 class Bike extends Object {
     constructor(name, age, weight, brand, model, type, color, wheels) {
         super(name, age, weight); //comes from parent class
@@ -39,7 +40,7 @@ class Bike extends Object {
         return '<br>' + super.showMessage() + ', the brand is ' + this.brand + ', the model is ' + this.model + ', the type is ' + this.color + ', the color is ' + this.type + ',the number of wheels are' + this.wheels;
     }
 }
-
+//Cat object
 class Animal extends Object {
     constructor(name, age, weight, species, breed) {
         super(name, age, weight); //comes from parent class
@@ -52,6 +53,7 @@ class Animal extends Object {
         return '<br>' + super.showMessage() + ', the species is ' + this.species + ', the breed is ' + this.breed ;
     }
 }
+//Fish
 class Animals extends Object {
     constructor(name, age, weight, species, breed, type) {
         super(name, age, weight); //comes from parent class
@@ -64,7 +66,7 @@ class Animals extends Object {
         return '<br>' + super.showMessage() + ', the species is ' + this.species + ', the breed is ' + this.breed + ',fresh' + this.type;
     }
 }
-
+//Proffesion object 
 class Job extends Object {
     constructor(name, age, weight, jobposition) {
         super(name, age, weight); //comes from parent class

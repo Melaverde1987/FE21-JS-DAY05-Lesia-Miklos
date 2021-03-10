@@ -18,7 +18,8 @@ class Object {
         return "This is " + this.name + ', the age is ' + this.age + ', the weight is ' + this.weight;
     }
 } 
-
+ 
+//car object
 class Car extends Object {
     constructor(name, age, weight, brand, model, type, color) {
         super(name, age, weight); //comes from parent class
@@ -27,7 +28,7 @@ class Car extends Object {
         this.type = type;
         this.color = color;
     }
-
+//printing out the message
     showMessage() {
         return '<br>' + super.showMessage() + ', the brand is ' + this.brand + ', the model is ' + this.model + ', the type is ' + this.type + ', the color is ' + this.type;
     }
