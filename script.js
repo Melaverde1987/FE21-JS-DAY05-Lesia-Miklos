@@ -11,10 +11,12 @@ class Hotel {
 
     nightsReserve() {
         if (this.showAvailability >= this.nights ) {
-            document.getElementById("result").style.color = "#32bd19";
+            document.getElementById("result").style.backgroundColor = "#32bd19";
+            document.getElementById("result").style.display = "block";
             return "I'll reserve";
         } else {
-            document.getElementById("result").style.color = "#e91e63";
+            document.getElementById("result").style.backgroundColor = "#e91e63";
+            document.getElementById("result").style.display = "block";
             return "Sorry, no available nights for " + this.userName + ' in ' + this.hotelName;
         }
     }

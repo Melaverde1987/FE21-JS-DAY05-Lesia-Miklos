@@ -84,3 +84,13 @@ main {
             width: 35%;
             border-color: blue !important;
         }
+
+        main #result {
+            padding: 1rem;
+            box-sizing: border-box;
+            color: black;
+            display: none;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+        }
