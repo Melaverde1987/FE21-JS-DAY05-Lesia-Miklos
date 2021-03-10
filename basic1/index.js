@@ -46,7 +46,7 @@ class Animal extends Object {
     }
 }
  
-
+//asigned values
 var person1 = new Object ("John", 21, 65);
 var person2 = new Car('Limousine', 2, 100, 'Mercedes', 'A1', 'car', 'blue');
 var animal1 = new Animal('Cat', 5, 6, 'Feline', 'domestic cat');
