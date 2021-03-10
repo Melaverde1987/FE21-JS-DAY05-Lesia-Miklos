@@ -14,13 +14,43 @@ class Object {
         this.age = age;
         this.weight = weight;
     }
-showMessage(){
-    return  "This is the " + this.name + this.age + '<br>' + this.weight;
-}
+    showMessage(){
+        return "This is " + this.name + ', the age is ' + this.age + ', the weight is ' + this.weight;
+    }
 } 
+
+class Car extends Object {
+    constructor(name, age, weight, brand, model, type, color) {
+        super(name, age, weight); //comes from parent class
+        this.brand = brand;
+        this.model = model;
+        this.type = type;
+        this.color = color;
+    }
+
+    showMessage() {
+        return '<br>' + super.showMessage() + ', the brand is ' + this.brand + ', the model is ' + this.model + ', the type is ' + this.type + ', the color is ' + this.type;
+    }
+}
+
+class Animal extends Object {
+    constructor(name, age, weight, species, breed) {
+        super(name, age, weight); //comes from parent class
+        this.species = species;
+        this.breed = breed;
+    }
+
+    showMessage() {
+        return '<br>' + super.showMessage() + ', the species is ' + this.species + ', the breed is ' + this.breed;
+    }
+}
  
 
 var person1 = new Object ("John", 21, 65);
+var person2 = new Car('Limousine', 2, 100, 'Mercedes', 'A1', 'car', 'blue');
+var animal1 = new Animal('Cat', 5, 6, 'Feline', 'domestic cat');
 
 document.write(person1.showMessage());
+document.write(person2.showMessage());
+document.write(animal1.showMessage());
 
